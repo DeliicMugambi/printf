@@ -2,13 +2,13 @@
 
 /**
  * _printf - produces output according to a format
- * @format: format string containing the characters and the specifiers
- * Description: this function will call the get_print() function that will
- * determine which printing function to call depending on the conver
- * specifiers contained into fmt
- * Return: length of the formatted output string
- * 
- */
+ *
+ * @format: format string containing the characters and specifiers
+ *
+ * Return: length of the formated output string
+*/
+
+
 int _printf(const char *format, ...)
 {
 	int (*pfunc)(va_list, flags_t *);
